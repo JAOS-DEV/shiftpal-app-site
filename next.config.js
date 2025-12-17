@@ -4,8 +4,11 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  basePath: process.env.NODE_ENV === "production" ? "" : "",
+  // No basePath needed when using custom domain (shiftpal.app)
+  // The CNAME file tells GitHub Pages to serve from root
   trailingSlash: true,
+  // Ensure assets are referenced correctly
+  assetPrefix: undefined,
 };
 
 module.exports = nextConfig;
