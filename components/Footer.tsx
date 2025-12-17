@@ -10,7 +10,11 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src={`${process.env.NODE_ENV === "production" ? "/shiftpal-app-site" : ""}/logo.png`}
+                src={`${
+                  process.env.NODE_ENV === "production"
+                    ? "/shiftpal-app-site"
+                    : ""
+                }/logo.png`}
                 alt="ShiftPal Logo"
                 className="w-8 h-8"
               />

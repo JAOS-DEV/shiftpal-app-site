@@ -14,7 +14,11 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <img
-              src={`${process.env.NODE_ENV === "production" ? "/shiftpal-app-site" : ""}/logo.png`}
+              src={`${
+                process.env.NODE_ENV === "production"
+                  ? "/shiftpal-app-site"
+                  : ""
+              }/logo.png`}
               alt="ShiftPal Logo"
               className="w-10 h-10"
             />

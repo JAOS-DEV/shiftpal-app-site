@@ -43,7 +43,11 @@ export default function Hero() {
                 <div className="aspect-[9/19] bg-gradient-to-br from-white/20 to-white/5 rounded-2xl flex items-center justify-center">
                   <div className="text-center">
                     <img
-                      src={`${process.env.NODE_ENV === "production" ? "/shiftpal-app-site" : ""}/logo.png`}
+                      src={`${
+                        process.env.NODE_ENV === "production"
+                          ? "/shiftpal-app-site"
+                          : ""
+                      }/logo.png`}
                       alt="ShiftPal App Icon"
                       className="w-32 h-32 mx-auto mb-4 drop-shadow-2xl"
                     />
