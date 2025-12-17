@@ -4,11 +4,10 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  // No basePath needed when using custom domain (shiftpal.app)
-  // The CNAME file tells GitHub Pages to serve from root
+  // basePath is needed for GitHub Pages URL (jaos-dev.github.io/shiftpal-app-site)
+  // Remove CNAME file if using GitHub Pages URL, or configure custom domain DNS if using custom domain
+  basePath: "/shiftpal-app-site",
   trailingSlash: true,
-  // Ensure assets are referenced correctly
-  assetPrefix: undefined,
 };
 
 module.exports = nextConfig;

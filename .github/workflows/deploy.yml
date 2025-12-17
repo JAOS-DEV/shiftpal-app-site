@@ -34,10 +34,8 @@ jobs:
       - name: Build Next.js site
         run: npm run build
 
-      - name: Add CNAME and .nojekyll
-        run: |
-          cp .nojekyll out/.nojekyll
-          cp public/CNAME out/CNAME
+      - name: Add .nojekyll
+        run: echo "" > out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
