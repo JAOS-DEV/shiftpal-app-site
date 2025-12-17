@@ -1,7 +1,6 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -14,11 +13,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/logo.png"
+            <img
+              src="/shiftpal-app-site/logo.png"
               alt="ShiftPal Logo"
-              width={40}
-              height={40}
               className="w-10 h-10"
             />
             <span className="text-xl font-bold text-text-light">ShiftPal</span>

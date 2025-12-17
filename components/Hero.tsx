@@ -1,5 +1,4 @@
 import { Download } from "lucide-react";
-import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -43,11 +42,9 @@ export default function Hero() {
               <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
                 <div className="aspect-[9/19] bg-gradient-to-br from-white/20 to-white/5 rounded-2xl flex items-center justify-center">
                   <div className="text-center">
-                    <Image
-                      src="/logo.png"
+                    <img
+                      src="/shiftpal-app-site/logo.png"
                       alt="ShiftPal App Icon"
-                      width={128}
-                      height={128}
                       className="w-32 h-32 mx-auto mb-4 drop-shadow-2xl"
                     />
                     <p className="text-white text-sm opacity-75">

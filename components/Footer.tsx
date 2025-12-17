@@ -1,5 +1,4 @@
 import { Heart, Mail } from "lucide-react";
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -10,11 +9,9 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Image
-                src="/logo.png"
+              <img
+                src="/shiftpal-app-site/logo.png"
                 alt="ShiftPal Logo"
-                width={32}
-                height={32}
                 className="w-8 h-8"
               />
               <span className="text-lg font-bold text-text-light">
