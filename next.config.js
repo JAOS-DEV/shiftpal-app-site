@@ -4,9 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true, // Required for static export
   },
-  // basePath is needed for GitHub Pages URL (jaos-dev.github.io/shiftpal-app-site)
-  // Remove CNAME file if using GitHub Pages URL, or configure custom domain DNS if using custom domain
-  basePath: "/shiftpal-app-site",
+  // Only use basePath in production (GitHub Pages)
+  // In development, basePath is empty so site works at localhost:3000
+  basePath: process.env.NODE_ENV === "production" ? "/shiftpal-app-site" : "",
   trailingSlash: true,
 };
 
