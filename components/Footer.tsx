@@ -54,7 +54,7 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-text-light mb-4">Support</h3>
             <a
-              href="mailto:support@shiftpal.app"
+              href="mailto:shiftpalapp@gmail.com"
               className="flex items-center space-x-2 text-text-secondary hover:text-primary transition-colors text-sm"
             >
               <Mail className="w-4 h-4" />

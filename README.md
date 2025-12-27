@@ -183,7 +183,7 @@ This is a private project for ShiftPal. If you have suggestions or find issues, 
 ## 📧 Contact
 
 - **Developer**: James O'Sullivan
-- **Email**: support@shiftpal.app
+- **Email**: shiftpalapp@gmail.com
 - **GitHub**: JAOS-DEV
 
 ## 📝 License

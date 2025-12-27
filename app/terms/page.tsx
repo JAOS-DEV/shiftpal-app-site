@@ -313,7 +313,7 @@ export default function TermsOfService() {
         <h3>14.2 Dispute Resolution</h3>
         <p>
           If you have a dispute with ShiftPal, please contact us first at{" "}
-          <a href="mailto:support@shiftpal.app">support@shiftpal.app</a> to
+          <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a> to
           attempt an informal resolution. If we cannot resolve the dispute
           informally, you agree that any legal action must be brought in the
           courts of the jurisdiction specified above.
@@ -358,7 +358,7 @@ export default function TermsOfService() {
         <ul>
           <li>
             <strong>Email:</strong>{" "}
-            <a href="mailto:shiftpalapp@gmail.com">support@shiftpal.app</a>
+            <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>
           </li>
           <li>
             <strong>Developer:</strong> James O&apos;Sullivan
@@ -379,5 +379,3 @@ export default function TermsOfService() {
     </LegalLayout>
   );
 }
-
-

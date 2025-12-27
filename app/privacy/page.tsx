@@ -146,7 +146,7 @@ export default function PrivacyPolicy() {
         <p>
           We retain your data for as long as your account is active. You can
           delete your data at any time through the app settings or by contacting
-          us at <a href="mailto:support@shiftpal.app">support@shiftpal.app</a>.
+          us at <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
       </section>
 
@@ -215,7 +215,7 @@ export default function PrivacyPolicy() {
         <p>
           To exercise these rights, go to <strong>Settings → Privacy</strong> in
           the app or email us at{" "}
-          <a href="mailto:shiftpalapp@gmail.com">support@shiftpal.app</a>.
+          <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
       </section>
 
@@ -225,7 +225,7 @@ export default function PrivacyPolicy() {
           ShiftPal is not intended for users under the age of 16. We do not
           knowingly collect personal information from children. If you believe
           we have collected data from a child, please contact us immediately at{" "}
-          <a href="mailto:shiftpalapp@gmail.com">support@shiftpal.app</a>.
+          <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
       </section>
 
@@ -287,7 +287,7 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Email:</strong>{" "}
-            <a href="mailto:shiftpalapp@gmail.com">support@shiftpal.app</a>
+            <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>
           </li>
           <li>
             <strong>Developer:</strong> James O&apos;Sullivan
