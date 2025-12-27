@@ -1,4 +1,5 @@
 import { Download } from "lucide-react";
+import PhoneMockup from "./PhoneMockup";
 
 export default function Hero() {
   return (
@@ -37,31 +38,15 @@ export default function Hero() {
 
           {/* Right Content - App Preview */}
           <div className="relative lg:block hidden">
-            <div className="relative z-10">
-              {/* Placeholder for app mockup */}
-              <div className="bg-white/10 backdrop-blur-lg rounded-3xl p-8 shadow-2xl">
-                <div className="aspect-[9/19] bg-gradient-to-br from-white/20 to-white/5 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <img
-                      src={`${
-                        process.env.NODE_ENV === "production"
-                          ? "/shiftpal-app-site"
-                          : ""
-                      }/logo.png`}
-                      alt="ShiftPal App Icon"
-                      className="w-32 h-32 mx-auto mb-4 drop-shadow-2xl"
-                    />
-                    <p className="text-white text-sm opacity-75">
-                      Available on iOS
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <PhoneMockup
+              screenshot="/screenshots/tracker-manual.png"
+              alt="ShiftPal tracker screen showing easy shift entry with manual mode"
+              priority={true}
+            />
 
             {/* Decorative elements */}
-            <div className="absolute -top-10 -right-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
-            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl"></div>
+            <div className="absolute -top-10 -right-10 w-72 h-72 bg-white/10 rounded-full blur-3xl -z-10"></div>
+            <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl -z-10"></div>
           </div>
         </div>
       </div>
