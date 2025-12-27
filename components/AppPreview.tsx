@@ -1,3 +1,4 @@
+import { getAssetPath } from "@/lib/paths";
 import Image from "next/image";
 
 interface Screenshot {
@@ -15,7 +16,8 @@ const screenshots: Screenshot[] = [
   {
     src: "/screenshots/pay-breakdown.png",
     alt: "Detailed pay breakdown showing calculations and deductions",
-    caption: "See exactly how your pay is calculated with complete transparency",
+    caption:
+      "See exactly how your pay is calculated with complete transparency",
   },
   {
     src: "/screenshots/pay-history.png",
@@ -44,7 +46,7 @@ export default function AppPreview() {
               <div className="relative w-full max-w-[280px] mb-6">
                 <div className="rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-gray-900">
                   <Image
-                    src={screenshot.src}
+                    src={getAssetPath(screenshot.src)}
                     alt={screenshot.alt}
                     width={414}
                     height={896}
@@ -67,4 +69,3 @@ export default function AppPreview() {
     </section>
   );
 }
-

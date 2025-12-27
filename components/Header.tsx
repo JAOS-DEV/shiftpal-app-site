@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { getAssetPath } from "@/lib/paths";
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -14,11 +15,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <img
-              src={`${
-                process.env.NODE_ENV === "production"
-                  ? "/shiftpal-app-site"
-                  : ""
-              }/logo.png`}
+              src={getAssetPath("/logo.png")}
               alt="ShiftPal Logo"
               className="w-10 h-10"
             />

@@ -1,5 +1,6 @@
 import { Heart, Mail } from "lucide-react";
 import Link from "next/link";
+import { getAssetPath } from "@/lib/paths";
 
 export default function Footer() {
   return (
@@ -10,11 +11,7 @@ export default function Footer() {
           <div>
             <div className="flex items-center space-x-2 mb-4">
               <img
-                src={`${
-                  process.env.NODE_ENV === "production"
-                    ? "/shiftpal-app-site"
-                    : ""
-                }/logo.png`}
+                src={getAssetPath("/logo.png")}
                 alt="ShiftPal Logo"
                 className="w-8 h-8"
               />

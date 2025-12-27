@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { getAssetPath } from "@/lib/paths";
 
 interface PhoneMockupProps {
   screenshot: string;
@@ -20,7 +21,7 @@ export default function PhoneMockup({
         {/* Screen */}
         <div className="relative bg-white">
           <Image
-            src={screenshot}
+            src={getAssetPath(screenshot)}
             alt={alt}
             width={414}
             height={896}
