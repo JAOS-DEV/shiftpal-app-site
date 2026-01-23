@@ -9,7 +9,17 @@ export const metadata: Metadata = {
 
 export default function TermsOfService() {
   return (
-    <LegalLayout title="Terms of Service" lastUpdated="December 17, 2025">
+    <LegalLayout title="Terms of Service" lastUpdated="January 23, 2026">
+      <section>
+        <h2>Plain English Summary</h2>
+        <p>
+          By using ShiftPal, you agree to use the app responsibly and legally.
+          We provide the service &quot;as is&quot; and aren&apos;t liable for
+          any damages. You can stop using the app at any time. These terms may
+          change, and we&apos;ll notify you of updates.
+        </p>
+      </section>
+
       <section>
         <h2>1. Acceptance of Terms</h2>
         <p>
@@ -34,9 +44,9 @@ export default function TermsOfService() {
         <ul>
           <li>Track work shifts with start/end times and breaks</li>
           <li>Calculate earnings based on custom pay rates</li>
-          <li>View shift history and export data</li>
-          <li>Sync data across multiple devices (optional)</li>
+          <li>View shift history and export data (premium feature)</li>
           <li>Store data securely using Firebase cloud services</li>
+          <li>Access premium features through subscription (optional)</li>
         </ul>
         <p>
           ShiftPal is provided as-is, and we reserve the right to modify,
@@ -71,6 +81,11 @@ export default function TermsOfService() {
           You may delete your account at any time through the app settings. We
           reserve the right to suspend or terminate accounts that violate these
           Terms or engage in fraudulent, abusive, or illegal activity.
+        </p>
+        <p>
+          <strong>Note:</strong> Canceling your subscription does not
+          automatically delete your account. You must separately delete your
+          account if you wish to remove all your data.
         </p>
       </section>
 
@@ -159,23 +174,157 @@ export default function TermsOfService() {
 
       <section>
         <h2>7. Payment and Subscriptions</h2>
+
+        <h3>7.1 Subscription Plans</h3>
+        <p>ShiftPal offers premium subscriptions with the following options:</p>
+        <ul>
+          <li>
+            <strong>Monthly Premium:</strong> £1.99 per month (auto-renewing)
+          </li>
+          <li>
+            <strong>Yearly Premium:</strong> £14.99 per year (auto-renewing,
+            save 37%)
+          </li>
+        </ul>
         <p>
-          ShiftPal is currently free to use. If we introduce paid features or
-          subscriptions in the future:
+          Both plans include a <strong>30-day free trial</strong> period. During
+          the free trial, you have full access to premium features. If you do
+          not cancel before the trial ends, your subscription will automatically
+          begin and you will be charged.
+        </p>
+
+        <h3>7.2 Free Tier</h3>
+        <p>ShiftPal offers a free tier with limited features:</p>
+        <ul>
+          <li>30 shifts per month</li>
+          <li>3 months of history access</li>
+          <li>Limited pay rates and allowances</li>
+          <li>No night pay rules or weekend uplift</li>
+          <li>No data export</li>
+        </ul>
+
+        <h3>7.3 Payment Processing</h3>
+        <p>
+          All subscription payments are processed through Apple&apos;s In-App
+          Purchase system. By purchasing a subscription, you agree to
+          Apple&apos;s Payment Terms and Conditions. We do not process payments
+          directly and do not have access to your payment information.
+        </p>
+
+        <h3>7.4 Auto-Renewal</h3>
+        <p>
+          Subscriptions automatically renew at the end of each billing period
+          (monthly or yearly) unless you cancel at least 24 hours before the
+          renewal date. You will be charged the same price for the renewal
+          period unless we notify you of a price change.
+        </p>
+
+        <h3>7.5 Free Trial</h3>
+        <ul>
+          <li>The free trial period begins immediately when you start your subscription</li>
+          <li>You will not be charged during the trial period</li>
+          <li>If you cancel during the trial period, you will not be charged</li>
+          <li>
+            If you do not cancel before the trial ends, your subscription will
+            automatically begin and you will be charged
+          </li>
+          <li>You can only use the free trial once per subscription product</li>
+        </ul>
+
+        <h3>7.6 Subscription Management</h3>
+        <p>
+          You can manage your subscription (cancel, change plan, view billing
+          history) through:
         </p>
         <ul>
           <li>
-            Pricing and payment terms will be clearly communicated in the app
+            <strong>iOS:</strong> Settings → [Your Name] → Subscriptions →
+            ShiftPal
           </li>
           <li>
-            Subscriptions will auto-renew unless canceled before the renewal
-            date
-          </li>
-          <li>
-            Refunds will be handled in accordance with Apple App Store or Google
-            Play Store policies
+            <strong>Direct Link:</strong>{" "}
+            <a
+              href="https://apps.apple.com/account/subscriptions"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://apps.apple.com/account/subscriptions
+            </a>
           </li>
         </ul>
+        <p>
+          We cannot cancel or modify subscriptions on your behalf, as they are
+          managed entirely by Apple.
+        </p>
+
+        <h3>7.7 Cancellation</h3>
+        <ul>
+          <li>
+            You can cancel your subscription at any time through Apple&apos;s
+            subscription management
+          </li>
+          <li>
+            Cancellation takes effect at the end of your current billing period
+          </li>
+          <li>
+            You will retain access to premium features until the end of your paid
+            period
+          </li>
+          <li>No refunds are provided for the current billing period</li>
+          <li>
+            After cancellation, you will be downgraded to the free tier
+          </li>
+        </ul>
+
+        <h3>7.8 Refunds</h3>
+        <p>
+          Refund requests are handled by Apple according to their refund policy.
+          We do not process refunds directly. To request a refund:
+        </p>
+        <ul>
+          <li>
+            <strong>iOS:</strong> Contact Apple Support or request a refund
+            through{" "}
+            <a
+              href="https://reportaproblem.apple.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              https://reportaproblem.apple.com
+            </a>
+          </li>
+          <li>
+            Apple&apos;s standard refund policy applies (typically within 90 days
+            of purchase)
+          </li>
+        </ul>
+
+        <h3>7.9 Price Changes</h3>
+        <p>We reserve the right to change subscription prices at any time. If we increase prices:</p>
+        <ul>
+          <li>We will notify you at least 30 days in advance</li>
+          <li>The new price will apply to your next billing cycle</li>
+          <li>
+            You can cancel before the price change takes effect to avoid the new
+            price
+          </li>
+        </ul>
+
+        <h3>7.10 Subscription Status</h3>
+        <p>
+          Your subscription status is verified through Apple&apos;s receipt
+          validation system. If there is a discrepancy between your
+          subscription status in ShiftPal and Apple&apos;s records,
+          Apple&apos;s records take precedence. You can restore purchases through
+          the app if your subscription is not recognized.
+        </p>
+
+        <h3>7.11 Promotional Offers</h3>
+        <p>
+          We may offer promotional subscriptions, discounts, or free trials from
+          time to time. These offers are subject to the terms specified at the
+          time of the offer and may be limited in duration or availability.
+        </p>
       </section>
 
       <section>
@@ -187,14 +336,31 @@ export default function TermsOfService() {
             authentication, and analytics
           </li>
           <li>
-            <strong>Apple App Store / Google Play Store:</strong> For app
-            distribution
+            <strong>Apple App Store:</strong> For app distribution and in-app
+            purchase processing
+          </li>
+          <li>
+            <strong>Apple:</strong> For payment processing and subscription
+            management
           </li>
         </ul>
         <p>
           Your use of these services is also governed by their respective terms
           and privacy policies. We are not responsible for the actions or
           policies of third-party providers.
+        </p>
+        <p>
+          <strong>Apple Services:</strong> When you make a purchase, you are
+          also subject to Apple&apos;s Terms and Conditions. Please review
+          Apple&apos;s terms at{" "}
+          <a
+            href="https://www.apple.com/legal/internet-services/itunes/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.apple.com/legal/internet-services/itunes/
+          </a>
+          .
         </p>
       </section>
 
@@ -226,10 +392,14 @@ export default function TermsOfService() {
           <li>Loss of profits, data, or goodwill</li>
           <li>Damages arising from your use or inability to use the Service</li>
           <li>Errors in shift tracking or pay calculations</li>
+          <li>
+            Subscription billing issues (contact Apple for billing disputes)
+          </li>
         </ul>
         <p>
           In no event shall our total liability exceed the amount you paid to
-          use ShiftPal (currently $0).
+          use ShiftPal in the 12 months preceding the claim (or £0 if you are
+          using the free tier).
         </p>
       </section>
 
@@ -272,6 +442,10 @@ export default function TermsOfService() {
             We may delete your account and associated data after a reasonable
             period
           </li>
+          <li>
+            Your subscription will continue according to Apple&apos;s terms (we
+            cannot cancel it for you)
+          </li>
         </ul>
         <p>
           Sections of these Terms that should survive termination (e.g.,
@@ -296,7 +470,8 @@ export default function TermsOfService() {
         <p>
           Your continued use of ShiftPal after changes are posted constitutes
           your acceptance of the updated Terms. If you do not agree to the
-          changes, you must stop using the Service.
+          changes, you must stop using the Service and cancel your subscription
+          (if applicable).
         </p>
       </section>
 
@@ -317,6 +492,11 @@ export default function TermsOfService() {
           attempt an informal resolution. If we cannot resolve the dispute
           informally, you agree that any legal action must be brought in the
           courts of the jurisdiction specified above.
+        </p>
+        <p>
+          <strong>Subscription Disputes:</strong> For billing or
+          subscription-related disputes, please contact Apple Support first, as
+          they process all payments.
         </p>
       </section>
 
@@ -368,11 +548,23 @@ export default function TermsOfService() {
             <a href="https://shiftpal.app">https://shiftpal.app</a>
           </li>
         </ul>
+        <p>
+          <strong>For subscription or billing issues</strong>, please contact
+          Apple Support or visit{" "}
+          <a
+            href="https://support.apple.com/billing"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://support.apple.com/billing
+          </a>
+          .
+        </p>
       </section>
 
       <section className="mt-12 pt-8 border-t">
         <p className="text-sm text-text-secondary italic">
-          These Terms of Service are effective as of December 17, 2025. Thank
+          These Terms of Service are effective as of January 23, 2026. Thank
           you for using ShiftPal!
         </p>
       </section>

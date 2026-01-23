@@ -9,7 +9,17 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="December 17, 2025">
+    <LegalLayout title="Privacy Policy" lastUpdated="January 23, 2026">
+      <section>
+        <h2>Plain English Summary</h2>
+        <p>
+          We respect your privacy. ShiftPal collects only the data needed to
+          provide our service, stores it securely with Firebase, and never sells
+          your information to third parties. You can delete your data at any
+          time.
+        </p>
+      </section>
+
       <section>
         <h2>1. Introduction</h2>
         <p>
@@ -60,7 +70,32 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h3>2.3 Usage and Device Information</h3>
+        <h3>2.3 Subscription and Payment Information</h3>
+        <p>If you purchase a premium subscription, we collect:</p>
+        <ul>
+          <li>
+            <strong>Subscription Data:</strong> Subscription product ID (monthly
+            or yearly), subscription start date, subscription status
+          </li>
+          <li>
+            <strong>Transaction Data:</strong> Transaction ID, original
+            transaction ID, and purchase receipt (for subscription verification)
+          </li>
+          <li>
+            <strong>Payment Processing:</strong> All payments are processed
+            through Apple&apos;s In-App Purchase system. We do not collect,
+            store, or have access to your credit card information or payment
+            details. Apple handles all payment processing securely.
+          </li>
+        </ul>
+        <p>
+          <strong>Note:</strong> We store purchase receipts and transaction IDs
+          to verify your subscription status and restore purchases across
+          devices. This data is stored securely in Firebase and is not shared
+          with third parties except as necessary to provide the Service.
+        </p>
+
+        <h3>2.4 Usage and Device Information</h3>
         <ul>
           <li>
             <strong>Device Data:</strong> Device type, operating system, app
@@ -76,11 +111,15 @@ export default function PrivacyPolicy() {
           </li>
         </ul>
 
-        <h3>2.4 Information We Do NOT Collect</h3>
+        <h3>2.5 Information We Do NOT Collect</h3>
         <ul>
           <li>We do not track your browsing activity outside of ShiftPal</li>
           <li>We do not sell your personal data to third parties</li>
           <li>We do not use your data for advertising purposes</li>
+          <li>
+            We do not collect or store credit card information (all payments
+            processed by Apple)
+          </li>
         </ul>
       </section>
 
@@ -90,7 +129,11 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Provide the Service:</strong> Track your shifts, calculate
-            pay, sync data across devices
+            pay, manage your subscription
+          </li>
+          <li>
+            <strong>Process Subscriptions:</strong> Verify subscription status,
+            restore purchases, manage premium features
           </li>
           <li>
             <strong>Improve Our Service:</strong> Analyze usage patterns to
@@ -144,9 +187,11 @@ export default function PrivacyPolicy() {
 
         <h3>4.3 Data Retention</h3>
         <p>
-          We retain your data for as long as your account is active. You can
-          delete your data at any time through the app settings or by contacting
-          us at <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
+          We retain your data for as long as your account is active. Subscription
+          data (transaction IDs, receipts) is retained to verify subscription
+          status and enable purchase restoration. You can delete your data at any
+          time through the app settings or by contacting us at{" "}
+          <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
       </section>
 
@@ -168,6 +213,12 @@ export default function PrivacyPolicy() {
           <li>
             <strong>Firebase (Google):</strong> Cloud hosting, authentication,
             and database services
+          </li>
+          <li>
+            <strong>Apple:</strong> Payment processing for in-app purchases
+            (subscriptions). Apple processes all payments and handles payment
+            data according to their privacy policy. We only receive transaction
+            confirmations and subscription status.
           </li>
           <li>
             <strong>Analytics Providers:</strong> Crash reporting and
@@ -217,6 +268,13 @@ export default function PrivacyPolicy() {
           the app or email us at{" "}
           <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
+        <p>
+          <strong>Subscription Data:</strong> You can manage your subscription
+          and payment information through Apple&apos;s subscription management
+          system (Settings → [Your Name] → Subscriptions on iOS). We cannot
+          modify or cancel subscriptions on your behalf, as they are managed
+          entirely by Apple.
+        </p>
       </section>
 
       <section>
@@ -252,6 +310,19 @@ export default function PrivacyPolicy() {
           support documentation, social media). We are not responsible for the
           privacy practices of these third parties. Please review their privacy
           policies before providing any information.
+        </p>
+        <p>
+          <strong>Apple Services:</strong> When you make a purchase, you are
+          also subject to Apple&apos;s Privacy Policy and Terms of Service. We
+          encourage you to review Apple&apos;s privacy practices at{" "}
+          <a
+            href="https://www.apple.com/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://www.apple.com/privacy/
+          </a>
+          .
         </p>
       </section>
 
@@ -301,7 +372,7 @@ export default function PrivacyPolicy() {
 
       <section className="mt-12 pt-8 border-t">
         <p className="text-sm text-text-secondary italic">
-          This Privacy Policy is effective as of December 17, 2025. Thank you
+          This Privacy Policy is effective as of January 23, 2026. Thank you
           for trusting ShiftPal with your shift tracking needs.
         </p>
       </section>
