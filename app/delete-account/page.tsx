@@ -1,5 +1,5 @@
-import type { Metadata } from "next";
 import DeleteAccountForm from "@/components/DeleteAccountForm";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Delete your ShiftPal account - ShiftPal",
@@ -36,8 +36,8 @@ export default function DeleteAccountPage() {
           <DeleteAccountForm />
 
           <p className="text-text-secondary text-sm mt-8 p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
-            Deleting your account permanently removes your ShiftPal account and
-            associated app data.
+            Account deletion permanently removes your ShiftPal account and
+            associated data including shifts, pay history, and settings.
           </p>
         </div>
       </div>
