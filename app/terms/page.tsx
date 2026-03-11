@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function TermsOfService() {
   return (
-    <LegalLayout title="Terms of Service" lastUpdated="January 23, 2026">
+    <LegalLayout title="Terms of Service" lastUpdated="March 11, 2026">
       <section>
         <h2>Plain English Summary</h2>
         <p>
@@ -187,10 +187,11 @@ export default function TermsOfService() {
           </li>
         </ul>
         <p>
-          Both plans include a <strong>30-day free trial</strong> period. During
-          the free trial, you have full access to premium features. If you do
-          not cancel before the trial ends, your subscription will automatically
-          begin and you will be charged.
+          Both plans may include a <strong>free trial</strong> period where
+          offered by the relevant platform. During any applicable free trial,
+          you have full access to premium features. If you do not cancel before
+          the trial ends, your subscription will automatically begin and you
+          will be charged according to the platform&apos;s billing terms.
         </p>
 
         <h3>7.2 Free Tier</h3>
@@ -205,125 +206,122 @@ export default function TermsOfService() {
 
         <h3>7.3 Payment Processing</h3>
         <p>
-          All subscription payments are processed through Apple&apos;s In-App
-          Purchase system. By purchasing a subscription, you agree to
-          Apple&apos;s Payment Terms and Conditions. We do not process payments
-          directly and do not have access to your payment information.
+          All subscription payments are processed by the platform through which
+          you purchase your subscription, such as Apple&apos;s In-App Purchase
+          system on iOS or Google Play Billing on Android. By purchasing a
+          subscription, you also agree to that platform&apos;s applicable
+          payment terms and conditions. We do not process payments directly and
+          do not have access to your full payment information.
         </p>
 
         <h3>7.4 Auto-Renewal</h3>
         <p>
           Subscriptions automatically renew at the end of each billing period
-          (monthly or yearly) unless you cancel at least 24 hours before the
-          renewal date. You will be charged the same price for the renewal
-          period unless we notify you of a price change.
+          (monthly or yearly) unless you cancel through the relevant platform at
+          least 24 hours before the renewal date, or as otherwise specified by
+          that platform. You will be charged the applicable renewal price unless
+          we or the platform notify you of a price change.
         </p>
 
         <h3>7.5 Free Trial</h3>
         <ul>
-          <li>The free trial period begins immediately when you start your subscription</li>
-          <li>You will not be charged during the trial period</li>
-          <li>If you cancel during the trial period, you will not be charged</li>
+          <li>
+            Any free trial period begins when you start a qualifying
+            subscription offer
+          </li>
+          <li>You will not be charged during the free trial period</li>
+          <li>
+            If you cancel during the trial period, you will not be charged
+          </li>
           <li>
             If you do not cancel before the trial ends, your subscription will
             automatically begin and you will be charged
           </li>
-          <li>You can only use the free trial once per subscription product</li>
+          <li>
+            Free trial eligibility, duration, and availability are determined by
+            the applicable platform and may vary by user or region
+          </li>
         </ul>
 
         <h3>7.6 Subscription Management</h3>
         <p>
           You can manage your subscription (cancel, change plan, view billing
-          history) through:
+          history) through the platform where you purchased it, such as:
         </p>
         <ul>
           <li>
-            <strong>iOS:</strong> Settings → [Your Name] → Subscriptions →
-            ShiftPal
+            <strong>iOS:</strong> Apple subscription management
           </li>
           <li>
-            <strong>Direct Link:</strong>{" "}
-            <a
-              href="https://apps.apple.com/account/subscriptions"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://apps.apple.com/account/subscriptions
-            </a>
+            <strong>Android:</strong> Google Play subscription management
           </li>
         </ul>
         <p>
-          We cannot cancel or modify subscriptions on your behalf, as they are
-          managed entirely by Apple.
+          We cannot cancel or modify subscriptions on your behalf where they are
+          managed by the platform provider.
         </p>
 
         <h3>7.7 Cancellation</h3>
         <ul>
           <li>
-            You can cancel your subscription at any time through Apple&apos;s
-            subscription management
+            You can cancel your subscription at any time through the platform
+            where you purchased it
           </li>
           <li>
             Cancellation takes effect at the end of your current billing period
+            unless otherwise stated by the platform
           </li>
           <li>
-            You will retain access to premium features until the end of your paid
-            period
+            You will retain access to premium features until the end of your
+            paid period
           </li>
-          <li>No refunds are provided for the current billing period</li>
           <li>
-            After cancellation, you will be downgraded to the free tier
+            Refund eligibility is determined by the applicable platform&apos;s
+            refund rules and any rights you may have under applicable law
           </li>
+          <li>After cancellation, you will be downgraded to the free tier</li>
         </ul>
 
         <h3>7.8 Refunds</h3>
         <p>
-          Refund requests are handled by Apple according to their refund policy.
-          We do not process refunds directly. To request a refund:
+          Refund requests are handled by the platform through which the purchase
+          was made, such as Apple or Google Play, according to that
+          platform&apos;s refund policies. We do not process platform-billed
+          refunds directly unless required by law.
         </p>
-        <ul>
-          <li>
-            <strong>iOS:</strong> Contact Apple Support or request a refund
-            through{" "}
-            <a
-              href="https://reportaproblem.apple.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              https://reportaproblem.apple.com
-            </a>
-          </li>
-          <li>
-            Apple&apos;s standard refund policy applies (typically within 90 days
-            of purchase)
-          </li>
-        </ul>
 
         <h3>7.9 Price Changes</h3>
-        <p>We reserve the right to change subscription prices at any time. If we increase prices:</p>
+        <p>
+          We reserve the right to change subscription prices at any time. If we
+          increase prices:
+        </p>
         <ul>
-          <li>We will notify you at least 30 days in advance</li>
-          <li>The new price will apply to your next billing cycle</li>
+          <li>We will provide notice where required by the platform or law</li>
+          <li>
+            The new price will apply to your next billing cycle if accepted
+          </li>
           <li>
             You can cancel before the price change takes effect to avoid the new
-            price
+            price, subject to the platform&apos;s rules
           </li>
         </ul>
 
         <h3>7.10 Subscription Status</h3>
         <p>
-          Your subscription status is verified through Apple&apos;s receipt
-          validation system. If there is a discrepancy between your
-          subscription status in ShiftPal and Apple&apos;s records,
-          Apple&apos;s records take precedence. You can restore purchases through
-          the app if your subscription is not recognized.
+          Your subscription status may be verified using platform-provided
+          receipt, order, or purchase validation systems. If there is a
+          discrepancy between your subscription status in ShiftPal and the
+          records of the platform through which you subscribed, the
+          platform&apos;s records will generally take precedence. Where
+          supported, you may restore purchases through the app.
         </p>
 
         <h3>7.11 Promotional Offers</h3>
         <p>
           We may offer promotional subscriptions, discounts, or free trials from
           time to time. These offers are subject to the terms specified at the
-          time of the offer and may be limited in duration or availability.
+          time of the offer and may be limited in duration, availability,
+          platform, region, or user eligibility.
         </p>
       </section>
 
@@ -333,34 +331,21 @@ export default function TermsOfService() {
         <ul>
           <li>
             <strong>Firebase (Google):</strong> For cloud storage,
-            authentication, and analytics
+            authentication, analytics, and related infrastructure
           </li>
           <li>
-            <strong>Apple App Store:</strong> For app distribution and in-app
-            purchase processing
+            <strong>Apple App Store:</strong> For app distribution and
+            subscription billing for iOS purchases
           </li>
           <li>
-            <strong>Apple:</strong> For payment processing and subscription
-            management
+            <strong>Google Play:</strong> For app distribution and subscription
+            billing for Android purchases
           </li>
         </ul>
         <p>
           Your use of these services is also governed by their respective terms
           and privacy policies. We are not responsible for the actions or
           policies of third-party providers.
-        </p>
-        <p>
-          <strong>Apple Services:</strong> When you make a purchase, you are
-          also subject to Apple&apos;s Terms and Conditions. Please review
-          Apple&apos;s terms at{" "}
-          <a
-            href="https://www.apple.com/legal/internet-services/itunes/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://www.apple.com/legal/internet-services/itunes/
-          </a>
-          .
         </p>
       </section>
 
@@ -393,7 +378,8 @@ export default function TermsOfService() {
           <li>Damages arising from your use or inability to use the Service</li>
           <li>Errors in shift tracking or pay calculations</li>
           <li>
-            Subscription billing issues (contact Apple for billing disputes)
+            Subscription billing issues (contact the purchase platform for
+            billing disputes)
           </li>
         </ul>
         <p>
@@ -443,8 +429,8 @@ export default function TermsOfService() {
             period
           </li>
           <li>
-            Your subscription will continue according to Apple&apos;s terms (we
-            cannot cancel it for you)
+            Your subscription will continue according to the terms of the
+            platform through which you subscribed unless you cancel it there
           </li>
         </ul>
         <p>
@@ -495,8 +481,8 @@ export default function TermsOfService() {
         </p>
         <p>
           <strong>Subscription Disputes:</strong> For billing or
-          subscription-related disputes, please contact Apple Support first, as
-          they process all payments.
+          subscription-related disputes, please first contact the platform
+          through which the purchase was made, such as Apple or Google Play.
         </p>
       </section>
 
@@ -550,22 +536,15 @@ export default function TermsOfService() {
         </ul>
         <p>
           <strong>For subscription or billing issues</strong>, please contact
-          Apple Support or visit{" "}
-          <a
-            href="https://support.apple.com/billing"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://support.apple.com/billing
-          </a>
-          .
+          the platform through which the purchase was made, such as Apple App
+          Store support or Google Play support.
         </p>
       </section>
 
       <section className="mt-12 pt-8 border-t">
         <p className="text-sm text-text-secondary italic">
-          These Terms of Service are effective as of January 23, 2026. Thank
-          you for using ShiftPal!
+          These Terms of Service are effective as of March 11, 2026. Thank you
+          for using ShiftPal!
         </p>
       </section>
     </LegalLayout>

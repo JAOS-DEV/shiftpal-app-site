@@ -18,7 +18,9 @@ export default function CTASection() {
             id="download"
           >
             <a
-              href="https://apps.apple.com/app/shiftpal"
+              href="https://apps.apple.com/us/app/shiftpal-app/id6757287002"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-white text-primary px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-2xl transition-all hover:scale-105"
             >
               <Download className="w-6 h-6 mr-2" />

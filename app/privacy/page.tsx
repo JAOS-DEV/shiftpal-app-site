@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPolicy() {
   return (
-    <LegalLayout title="Privacy Policy" lastUpdated="January 23, 2026">
+    <LegalLayout title="Privacy Policy" lastUpdated="March 11, 2026">
       <section>
         <h2>Plain English Summary</h2>
         <p>
@@ -75,24 +75,29 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Subscription Data:</strong> Subscription product ID (monthly
-            or yearly), subscription start date, subscription status
+            or yearly), subscription start date, renewal status, and
+            subscription status
           </li>
           <li>
-            <strong>Transaction Data:</strong> Transaction ID, original
-            transaction ID, and purchase receipt (for subscription verification)
+            <strong>Transaction Data:</strong> Transaction ID, order ID,
+            original transaction ID where applicable, and purchase receipt or
+            purchase token used for subscription verification
           </li>
           <li>
-            <strong>Payment Processing:</strong> All payments are processed
-            through Apple&apos;s In-App Purchase system. We do not collect,
-            store, or have access to your credit card information or payment
-            details. Apple handles all payment processing securely.
+            <strong>Payment Processing:</strong> Payments are processed by the
+            platform through which you purchase your subscription, such as
+            Apple&apos;s In-App Purchase system on iOS or Google Play Billing on
+            Android. We do not collect, store, or have access to your full
+            credit card or bank payment details. The platform provider handles
+            payment processing securely.
           </li>
         </ul>
         <p>
-          <strong>Note:</strong> We store purchase receipts and transaction IDs
-          to verify your subscription status and restore purchases across
-          devices. This data is stored securely in Firebase and is not shared
-          with third parties except as necessary to provide the Service.
+          <strong>Note:</strong> We may store purchase receipts, purchase
+          tokens, transaction IDs, order IDs, and related subscription status
+          data to verify your subscription, restore purchases, prevent fraud,
+          and enable premium access across supported devices. This data is
+          stored securely and is not sold to third parties.
         </p>
 
         <h3>2.4 Usage and Device Information</h3>
@@ -117,8 +122,9 @@ export default function PrivacyPolicy() {
           <li>We do not sell your personal data to third parties</li>
           <li>We do not use your data for advertising purposes</li>
           <li>
-            We do not collect or store credit card information (all payments
-            processed by Apple)
+            We do not collect or store full credit card or bank payment
+            information directly; payments are processed by the relevant app
+            marketplace or payment platform
           </li>
         </ul>
       </section>
@@ -187,10 +193,12 @@ export default function PrivacyPolicy() {
 
         <h3>4.3 Data Retention</h3>
         <p>
-          We retain your data for as long as your account is active. Subscription
-          data (transaction IDs, receipts) is retained to verify subscription
-          status and enable purchase restoration. You can delete your data at any
-          time through the app settings or by contacting us at{" "}
+          We retain your data for as long as your account is active.
+          Subscription-related data (such as transaction IDs, order IDs,
+          receipts, and purchase tokens) may be retained to verify subscription
+          status, prevent fraud, and enable purchase restoration where
+          applicable. You can delete your data at any time through the app
+          settings or by contacting us at{" "}
           <a href="mailto:shiftpalapp@gmail.com">shiftpalapp@gmail.com</a>.
         </p>
       </section>
@@ -212,17 +220,19 @@ export default function PrivacyPolicy() {
         <ul>
           <li>
             <strong>Firebase (Google):</strong> Cloud hosting, authentication,
-            and database services
+            database, and related infrastructure services
           </li>
           <li>
-            <strong>Apple:</strong> Payment processing for in-app purchases
-            (subscriptions). Apple processes all payments and handles payment
-            data according to their privacy policy. We only receive transaction
-            confirmations and subscription status.
+            <strong>Apple:</strong> App distribution and payment processing for
+            subscriptions purchased through Apple&apos;s App Store
           </li>
           <li>
-            <strong>Analytics Providers:</strong> Crash reporting and
-            performance monitoring (anonymized data)
+            <strong>Google:</strong> App distribution and payment processing for
+            subscriptions purchased through Google Play
+          </li>
+          <li>
+            <strong>Analytics and Crash Providers:</strong> Crash reporting,
+            diagnostics, and performance monitoring
           </li>
         </ul>
 
@@ -270,10 +280,10 @@ export default function PrivacyPolicy() {
         </p>
         <p>
           <strong>Subscription Data:</strong> You can manage your subscription
-          and payment information through Apple&apos;s subscription management
-          system (Settings → [Your Name] → Subscriptions on iOS). We cannot
-          modify or cancel subscriptions on your behalf, as they are managed
-          entirely by Apple.
+          and billing settings through the platform where you purchased it, such
+          as Apple subscription management on iOS or Google Play subscriptions
+          on Android. We cannot directly cancel, modify, or refund subscriptions
+          that are managed by the platform provider.
         </p>
       </section>
 
@@ -312,17 +322,10 @@ export default function PrivacyPolicy() {
           policies before providing any information.
         </p>
         <p>
-          <strong>Apple Services:</strong> When you make a purchase, you are
-          also subject to Apple&apos;s Privacy Policy and Terms of Service. We
-          encourage you to review Apple&apos;s privacy practices at{" "}
-          <a
-            href="https://www.apple.com/privacy/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            https://www.apple.com/privacy/
-          </a>
-          .
+          <strong>Platform Services:</strong> If you make a purchase through
+          Apple App Store or Google Play, your purchase is also subject to that
+          platform&apos;s own terms, billing rules, and privacy practices. We
+          encourage you to review the applicable platform policies.
         </p>
       </section>
 
@@ -372,12 +375,10 @@ export default function PrivacyPolicy() {
 
       <section className="mt-12 pt-8 border-t">
         <p className="text-sm text-text-secondary italic">
-          This Privacy Policy is effective as of January 23, 2026. Thank you
-          for trusting ShiftPal with your shift tracking needs.
+          This Privacy Policy is effective as of March 11, 2026. Thank you for
+          trusting ShiftPal with your shift tracking needs.
         </p>
       </section>
     </LegalLayout>
   );
 }
-
-
